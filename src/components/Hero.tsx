@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className=" grid grid-cols-1 sm:grid-cols-2">
+    <div className=" grid grid-cols-1 sm:grid-cols-2 border-b-2 mt-10">
       {/* DIV ONE  */}
       <div className=" flex flex-col justify-center space-y-4 p-6 ">
         <h1 className="uppercase text-semibold text-4xl md:text-5xl">
