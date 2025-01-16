@@ -23,7 +23,7 @@ export default function Project({title ,description , year, role, image }: Props
           width={300}
           height={300}
           layout="responsive"
-          className="object-cover"
+          className="object-cover hover:scale-105 transform transition-all"
         ></Image>
       </div>
       <div className="p-4">
