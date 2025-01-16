@@ -33,7 +33,7 @@ export default function Connect() {
           </h1>
 
           <p className="text-sm">
-            Say hello on <span>rohitashb123@gmail.com</span>
+            Say hello on <span>rohitbhadouria.work@gmail.com</span>
           </p>
           <p className="text-sm">
             For more info here&apos;s my{" "}
