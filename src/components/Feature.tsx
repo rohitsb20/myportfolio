@@ -1,8 +1,18 @@
-
+import Project from "./Project";
 import React from "react";
-import { CarouselOrientation } from "@/components/Carousel";
 
 
+
+const data = [
+  {
+    title: "Promotional landing page for our favorite show",
+    description:
+      "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
+    year: 2023,
+    role: "Front-end Developer",
+    image: "/images/project.png",
+  },
+];
 
 export default function Feature() {
   return (
@@ -18,7 +28,18 @@ export default function Feature() {
       </div>
 
       <div>
-        <CarouselOrientation/>
+  {
+    data.map((data) => (
+        <Project
+        key={data.title}
+            title={data.title}
+            description={data.description}
+            year={data.year}
+            role={data.role}
+            image={data.image}
+        />
+    ))
+  }
       </div>
     </div>
   );
