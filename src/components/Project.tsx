@@ -15,8 +15,8 @@ interface Props {
 
 export default function Project({title ,description , year, role, image }: Props) {
   return (
-    <div className="border-2 border-red-400 grid grid-cols-1 md:grid-cols-2 rounded-xl ">
-      <div className="p-4">
+    <div className="border-2 max-w-6xl border-red-400 grid grid-cols-1 md:grid-cols-2 rounded-xl ">
+      <div className="p-4 flex justify-center items-center">
         <Image
           src={image}
           alt="project-image"

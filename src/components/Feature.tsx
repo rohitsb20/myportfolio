@@ -45,17 +45,19 @@ export default function Feature() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1  gap-2 py-2">
-        {data.map((data) => (
-          <Project
-            key={data.title}
-            title={data.title}
-            description={data.description}
-            year={data.year}
-            role={data.role}
-            image={data.image}
-          />
-        ))}
+      <div className="flex justify-center items-center">
+        <div className="grid grid-cols-1  gap-2  py-2">
+          {data.map((data) => (
+            <Project
+              key={data.title}
+              title={data.title}
+              description={data.description}
+              year={data.year}
+              role={data.role}
+              image={data.image}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

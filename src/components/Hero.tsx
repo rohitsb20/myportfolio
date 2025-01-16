@@ -6,13 +6,14 @@ import { TiSocialLinkedin } from "react-icons/ti";
 
 import Image from "next/image";
 
+
 export default function Hero() {
   return (
     <div className=" grid grid-cols-1 sm:grid-cols-2 border-b-2 mt-10">
       {/* DIV ONE  */}
       <div className=" flex flex-col justify-center space-y-4 p-6 ">
         <h1 className="uppercase text-semibold text-4xl md:text-5xl">
-          hi, i am <br /> Rohit Bhadouria.
+        hi, i am <br /> Rohit Bhadouria.
         </h1>
         <p className="text-sm md:text-xl ">
           A Delhi based front-end developer passionate about building accessible
