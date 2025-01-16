@@ -15,19 +15,21 @@ interface Props {
 
 export default function Project({title ,description , year, role, image }: Props) {
   return (
-    <div className="border-2 border-red-400 grid grid-cols-1 md:grid-cols-2">
+    <div className="border-2 border-red-400 grid grid-cols-1 md:grid-cols-2 rounded-xl ">
       <div className="p-4">
         <Image
           src={image}
           alt="project-image"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
           layout="responsive"
           className="object-cover"
         ></Image>
       </div>
       <div className="p-4">
-        <h1 className="p-3 text-2xl">{title}</h1>
+        <h1  className="p-3 text-2xl">
+          {title}
+        </h1>
         <p className="text-base p-3">{description}</p>
 
         <h2 className="text-lg p-3">Project Info</h2>

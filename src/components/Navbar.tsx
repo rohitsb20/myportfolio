@@ -18,7 +18,7 @@ const navItems = [
   },
   {
     title: "Projects",
-    href: "/#projects",
+    href: "/#project",
   },
   {
     title: "Contact",
@@ -108,7 +108,7 @@ export default function Navbar() {
                 key={item.title}
                 variants={itemVariants}
               >
-                <Link
+                <Link 
                   href={item.href}
                   className="block rounded-md px-3 py-2 text-base font-light
                    text-white hover:bg-black hover:text-white "
