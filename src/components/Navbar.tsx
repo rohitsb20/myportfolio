@@ -51,7 +51,7 @@ export default function Navbar() {
         <div className="md:mr-4 flex justify-between w-full">
           <div>
             <Link
-              href="/"
+              href="/" id="top"
               className="font-semibold italic uppercase text-rose-500"
             >
               Rohit Bhadouria

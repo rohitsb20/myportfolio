@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoArrowUpCircleOutline } from "react-icons/io5";
+
 import { FaTwitterSquare } from "react-icons/fa";
 import Form from '@/components/Form';
 
@@ -28,16 +30,22 @@ export default function Connect() {
     <div className="h-[600px]  border-b-2 flex justify-center items-center">
       <div className="max-w-6xl   grid grid-cols-1 md:grid-cols-2 rounded-xl gap-x-3 ">
         <div className="flex flex-col  items-center justify-start gap-y-4">
-          <h1 className="text-6xl text-center p-3 font-bold text-rose-500">
+          <h1
+            id="contact"
+            className="text-6xl text-center p-3 font-bold text-rose-500"
+          >
             LET&apos;S CONNECT
           </h1>
 
           <p className="text-sm">
-            Say hello on <span>rohitbhadouria.work@gmail.com</span>
+            Say hello on <span>rohitbhadouria.work1@gmail.com</span>
           </p>
           <p className="text-sm">
             For more info here&apos;s my{" "}
-            <Link href="/" className="underline hover:scale-105 transform transition-all hover:text-rose-500">
+            <Link
+              href="/"
+              className="underline hover:scale-105 transform transition-all hover:text-rose-500"
+            >
               resume
             </Link>
           </p>
@@ -54,8 +62,14 @@ export default function Connect() {
           </div>
         </div>
 
-        <div className="">
-         <Form/>
+        <div>
+          <Form />
+          <button className="fixed bottom-5 right-5 bg-rose-500 p-3 rounded-full text-white text-2xl shadow-lg">
+            <Link href="#top">
+              {" "}
+              <IoArrowUpCircleOutline />
+            </Link>
+          </button>
         </div>
       </div>
     </div>

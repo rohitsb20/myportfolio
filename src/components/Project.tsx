@@ -47,10 +47,10 @@ export default function Project({title ,description , year, role, image }: Props
         </div>
         <hr />
         <div className="flex gap-x-4 text-sm pt-3 pl-3">
-          <button className="flex items-center gap-x-1  hover:underline">
+          <button className="flex items-center gap-x-1  hover:underline hover:scale-105 transform transition-all hover:text-rose-500">
             LIVE DEMO <GoArrowUpRight />
           </button>
-          <button className="flex items-center gap-x-1  hover:underline">
+          <button className="flex items-center gap-x-1  hover:underline hover:scale-105 transform transition-all hover:text-rose-500">
             SEE ON GITHUB <FaGithub />
           </button>
         </div>

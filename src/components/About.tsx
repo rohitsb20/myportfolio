@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="h-[500px]  border-b-2 flex justify-center items-center">
       <div className="max-w-6xl  grid grid-cols-1 md:grid-cols-2 rounded-xl ">
-        <div className="text-6xl text-center p-3 font-bold text-rose-500">
+        <div id='about' className="text-6xl text-center p-3 font-bold text-rose-500">
           About
         </div>
         <div>
