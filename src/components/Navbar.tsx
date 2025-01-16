@@ -95,7 +95,7 @@ export default function Navbar() {
       </div>
       {mobileMenuOpen && (
         <motion.div
-          className="md:hidden bg-background/95 rounded-lg"
+          className="md:hidden dark:bg-background/95 bg-rose-500 rounded-lg"
           initial="hidden"
           animate="visible"
           variants={staggerVariants}
@@ -109,7 +109,8 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-light text-white hover:bg-rose-500 hover:text-white "
+                  className="block rounded-md px-3 py-2 text-base font-light
+                   text-white hover:bg-black hover:text-white "
                 >
                   {item.title}
                 </Link>
