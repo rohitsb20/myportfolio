@@ -16,7 +16,7 @@ interface Props {
 export default function Project({title ,description , year, role, image }: Props) {
   return (
     <div className="border-2 max-w-6xl border-red-400 grid grid-cols-1 md:grid-cols-2 rounded-xl ">
-      <div className="p-4 flex justify-center items-center">
+      <div className="p-4  flex justify-center items-center">
         <Image
           src={image}
           alt="project-image"
@@ -26,8 +26,8 @@ export default function Project({title ,description , year, role, image }: Props
           className="object-cover hover:scale-105 transform transition-all"
         ></Image>
       </div>
-      <div className="p-4">
-        <h1  className="p-3 text-2xl">
+      <div className="p-3">
+        <h1  className="p-3 text-xl">
           {title}
         </h1>
         <p className="text-base p-3">{description}</p>
