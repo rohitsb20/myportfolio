@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { SiGithub } from "react-icons/si";
 import { TiSocialLinkedin } from "react-icons/ti";
 
-import { motion } from "framer-motion";
 
 
 import Image from "next/image";
@@ -24,7 +23,7 @@ export default function Hero() {
             variant="default"
             size="sm"
             className="hover:text-rose-500 rounded-3xl dark:hover:text-black font-bold tracking-wide
-              bg-rose-500"
+              bg-rose-500" 
           >
             Contact Me
           </Button>
@@ -45,13 +44,7 @@ export default function Hero() {
 
       {/* DIV TWO   */}
 
-      <motion.div
-        className="p-6 "
-        initial={{ scale: 1 }}
-        animate={{ scale: 1.5 }}
-        transition={{ duration: 0.5 }}
-        whileHover={{ scale: 1.8 }}
-      >
+      <div className="p-6 " >
         <Image
           src="/images/home.png"
           alt="home.png"
@@ -59,7 +52,7 @@ export default function Hero() {
           height={400}
           layout="responsive"
         ></Image>
-      </motion.div>
+      </div>
     </div>
   );
 }
