@@ -1,12 +1,23 @@
-import React, { ReactNode } from 'react'
-import { ThemeProvider } from 'next-themes'
+"use client";
+import React, { ReactNode, useEffect, useState } from "react";
+import { ThemeProvider } from "next-themes";
 
-export default function Provider({ children }: {children : ReactNode}) {
+export default function Provider({ children }: { children: ReactNode }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <>{children}</>;
+  }
+
   return (
-    <ThemeProvider>
-        <div className='text-gray-700 dark:text-white dark:bg-gray-700 min-h-screen select-none transition-colors duration-300'>
-    {children}
-</div>
+    <ThemeProvider attribute="class" defaultTheme="system">
+      <div className="text-black dark:text-white dark:bg-black min-h-screen select-none transition-colors duration-300">
+        {children}
+      </div>
     </ThemeProvider>
-  )
+  );
 }

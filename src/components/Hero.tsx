@@ -18,20 +18,24 @@ export default function Hero() {
           and user friendly websites.
         </p>
         <div className="flex space-x-2">
-          <Button variant="default" size="sm"  className="hover:text-rose-500">
+          <Button
+            variant="default"
+            size="sm"
+            className="hover:text-rose-500 dark:hover:text-black  dark:text-white"
+          >
             Contact Me
           </Button>
           <div
             className="rounded-full bg-primary/90 w-8 h-8 flex items-center
            justify-center"
           >
-            <TiSocialLinkedin className="z-100 text-rose-500 text-2xl hover:text-white" />
+            <TiSocialLinkedin className="z-100 text-rose-500 text-2xl dark:hover:text-black hover:text-white" />
           </div>
           <div
             className="rounded-full bg-primary/90 w-8 h-8 flex items-center
            justify-center"
           >
-            <SiGithub className="z-100 text-rose-500 text-lg hover:text-white" />
+            <SiGithub className="z-100 text-rose-500 text-lg hover:text-white dark:hover:text-black" />
           </div>
         </div>
       </div>
