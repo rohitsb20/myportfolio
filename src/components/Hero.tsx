@@ -51,6 +51,7 @@ export default function Hero() {
           width={400}
           height={400}
           layout="responsive"
+          className="hover:scale-105 transform transition-all"
         ></Image>
       </div>
     </div>
