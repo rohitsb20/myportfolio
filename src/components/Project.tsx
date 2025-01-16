@@ -27,12 +27,12 @@ export default function Project({title ,description , year, role, image }: Props
         ></Image>
       </div>
       <div className="p-3">
-        <h1  className="p-3 text-xl">
+        <h1  className="p-3 text-xl text-rose-500">
           {title}
         </h1>
         <p className="text-base p-3">{description}</p>
 
-        <h2 className="text-lg p-3">Project Info</h2>
+        <h2 className="text-lg p-3 text-rose-500">Project Info</h2>
         <hr />
 
         <div className="flex justify-between p-3">

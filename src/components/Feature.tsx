@@ -36,7 +36,7 @@ export default function Feature() {
   return (
     <div className="border-y-2 px-6 pb-4">
       <div className=" space-y-4 py-6">
-        <h1 id="project" className="text-4xl font-semibold tracking-wide">
+        <h1 id="project" className="text-4xl font-semibold tracking-wide text-rose-500">
           Featured Projects
         </h1>
         <p className="text-lg font-normal tracking-wide">
