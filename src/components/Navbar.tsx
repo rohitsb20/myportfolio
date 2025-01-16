@@ -74,7 +74,8 @@ export default function Navbar() {
           </nav>
         </div>
         <Button
-          className="  inline-flex items-center justify-center rounded-md md:hidden"
+          className="  inline-flex items-center justify-center 
+          rounded-md md:hidden bg-white"
           onClick={() => setmMobileMenuOpen(!mobileMenuOpen)}
         >
           <span className="sr-only">Open main menu</span>
