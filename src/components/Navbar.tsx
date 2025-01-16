@@ -46,8 +46,7 @@ export default function Navbar() {
   };
   return (
     <header
-      className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur 
-    supports-[backdrop-filter:bg-background/60 px-4 lg:px-0]"
+      className="sticky top-0 z-50 w-full border-b border-b-rose-500   px-4 lg:px-0]"
     >
       <div className="max-w-7xl mx-auto flex h-14 items-center">
         <div className="md:mr-4 flex justify-between w-full">
@@ -58,7 +57,7 @@ export default function Navbar() {
           {/* navbar */}
 
           <nav>
-            <ul className="md:flex hidden items-center space-x-6 text-sm font-normal">
+            <ul className="md:flex hidden items-center space-x-6 text-sm font-light">
               {navItems.map((item) => (
                 <li key={item.title}>
                   {" "}
@@ -89,7 +88,7 @@ export default function Navbar() {
    
       {mobileMenuOpen && (
         <motion.div
-          className="md:hidden"
+          className="md:hidden bg-background/95 rounded-lg"
           initial="hidden"
           animate="visible"
           variants={staggerVariants}
@@ -103,7 +102,7 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-yellow-500 hover:text-black "
+                  className="block rounded-md px-3 py-2 text-base font-light text-white hover:bg-rose-500 hover:text-white "
                 >
                   {item.title}
                 </Link>
