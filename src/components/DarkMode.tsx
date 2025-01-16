@@ -13,7 +13,7 @@ export default function DarkMode() {
 
     useEffect(() => setMounted(true), [])
   return (
-    <div>
+    <div'>
       {mounted &&
         (currentTheme === "dark" ? (
           <MdLightMode

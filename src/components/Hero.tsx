@@ -21,7 +21,8 @@ export default function Hero() {
           <Button
             variant="default"
             size="sm"
-            className="hover:text-rose-500 dark:hover:text-black  dark:text-white"
+            className="hover:text-rose-500 rounded-3xl dark:hover:text-black font-bold tracking-wide
+              bg-rose-500" 
           >
             Contact Me
           </Button>

@@ -45,7 +45,8 @@ export default function Navbar() {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-b-rose-500   px-4">
+    <header className="sticky top-0 z-50 w-full border-b border-b-rose-500 
+      px-2">
       <div className="w-full mx-auto flex h-14 items-center">
         <div className="md:mr-4 flex justify-between w-full">
           <div>
