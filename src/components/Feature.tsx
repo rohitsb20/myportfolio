@@ -1,18 +1,8 @@
-// import Project from "@/components/Project";
 
 import React from "react";
-import { Carousel } from "./ui/carousel";
+import { CarouselOrientation } from "@/components/Carousel";
 
-// const data = [
-//   {
-//     title: "Promotional landing page for our favorite show",
-//     description:
-//       "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
-//     year: 2023,
-//     role: "Front-end Developer",
-//     image: "/images/project.png",
-//   },
-// ];
+
 
 export default function Feature() {
   return (
@@ -27,19 +17,8 @@ export default function Feature() {
         </p>
       </div>
 
-      <div className="pb-5">
-        {/* {data.map((data, index) => (
-          <Project key={index} 
-          title={data.title}
-          image={data.image}
-            description={data.description}
-            year={data.year}
-            role={data.role}
-
-          />
-        ))} */}
-
-        <Carousel/>
+      <div>
+        <CarouselOrientation/>
       </div>
     </div>
   );
