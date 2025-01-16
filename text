@@ -1,0 +1,35 @@
+ <div className="flex flex-col gap-y-4 w-1/2 p-12 ">
+        <h1 className="uppercase text-semibold text-4xl">
+          hi, i am <br /> Rohit Bhadouria.
+        </h1>
+        <p className="text-sm ">
+          A Delhi based front-end developer passionate about building accessible
+          and user friendly websites.
+        </p>
+        <div className="flex space-x-2">
+          <Button variant="default" size="sm">
+            Contact Me
+          </Button>
+          <div
+            className="rounded-full bg-primary/90 w-8 h-8 flex items-center
+           justify-center"
+          >
+            <TiSocialLinkedin className="z-100 text-rose-500 text-2xl hover:text-white" />
+          </div>
+          <div
+            className="rounded-full bg-primary/90 w-8 h-8 flex items-center
+           justify-center"
+          >
+            <SiGithub className="z-100 text-rose-500 text-lg hover:text-white" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className=" border-2">
+            <Image src='/images/home.png' width={500} height={500} alt="home"
+            className="object-cover"
+            sizes="(max-width: 500px) 100vw, 500px">
+
+            </Image>
+        </div>
+      </div>
