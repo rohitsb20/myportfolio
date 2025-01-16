@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <div className="p-5">
         <Hero />
+        
       </div>
     </div>
   );
