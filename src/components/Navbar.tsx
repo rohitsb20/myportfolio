@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
+import DarkMode from "@/components/DarkMode";
 import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
@@ -45,19 +45,26 @@ export default function Navbar() {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <header
-      className="sticky top-0 z-50 w-full border-b border-b-rose-500   px-4 lg:px-0]"
-    >
-      <div className="max-w-7xl mx-auto flex h-14 items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-b-rose-500   px-4">
+      <div className="w-full mx-auto flex h-14 items-center">
         <div className="md:mr-4 flex justify-between w-full">
-         <Link href="/" className="font-semibold italic uppercase text-rose-500">
-          Rohit Bhadouria
-        </Link>
+          <div>
+            <Link
+              href="/"
+              className="font-semibold italic uppercase text-rose-500"
+            >
+              Rohit Bhadouria
+            </Link>
+          </div>
+
+          <div>
+            <DarkMode />
+          </div>
 
           {/* navbar */}
 
           <nav>
-            <ul className="md:flex hidden items-center space-x-6 text-sm font-light">
+            <ul className="md:flex hidden items-center space-x-6 text-sm font-normal">
               {navItems.map((item) => (
                 <li key={item.title}>
                   {" "}
@@ -75,7 +82,7 @@ export default function Navbar() {
         </div>
         <Button
           className="  inline-flex items-center justify-center 
-          rounded-md md:hidden bg-white"
+          rounded-md md:hidden dark:bg-white dark:hover:bg-rose-500 "
           onClick={() => setmMobileMenuOpen(!mobileMenuOpen)}
         >
           <span className="sr-only">Open main menu</span>
@@ -86,7 +93,6 @@ export default function Navbar() {
           )}
         </Button>
       </div>
-   
       {mobileMenuOpen && (
         <motion.div
           className="md:hidden bg-background/95 rounded-lg"
